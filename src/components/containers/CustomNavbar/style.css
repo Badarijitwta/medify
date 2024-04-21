@@ -73,7 +73,7 @@
 
 
 
-@media (max-width:800px) {
+@media (max-width:900px) {
 
   #mobile {
     display: flex !important;
@@ -87,6 +87,7 @@
       width: 30px;
       height: 30px;
       color: var(--color-light-blue);
+      transition: rotate(90deg) 0.3s ease;
     }
 
     #wrong-icon {
@@ -97,11 +98,11 @@
   }
 
   .navbar-main {
-    #navbar {
+    /* #navbar {
       display: none;
-    }
+    } */
 
-    #navbar.active {
+    #navbar {
       display: flex;
       width: 250px;
       height: 100vh;
@@ -114,8 +115,7 @@
       right: 0;
       z-index: 2;
       background-color: rgb(28, 65, 159);
-      transition: width 0.3s ease-in-out;
-
+      transition: width 0.4s ease-out;
 
       li {
         padding: 1rem;
@@ -125,6 +125,8 @@
         }
       }
     }
+
+
 
     #navbar.inactive {
       display: none;
