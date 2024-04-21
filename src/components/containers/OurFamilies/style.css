@@ -1,0 +1,96 @@
+.family-card-main {
+  background-color: white;
+  box-shadow: 0px 15px 45px -5px rgba(0, 0, 0, 0.07);
+  width: 242px;
+  height: 300px;
+  border-radius: 8px;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  #family-card-main-icon {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  #family-card-main-numbers {
+    font-weight: 600;
+    font-size: 48px;
+    color: rgba(27, 60, 116, 1);
+  }
+
+  #family-card-main-text {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(119, 130, 157, 1);
+  }
+
+}
+
+.our-families-main {
+  height: 789px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .our-families-wrapper {
+    width: 90%;
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .our-families-text {
+    /* background-color: wheat; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    #our-families-text-heading {
+      color: rgba(42, 167, 255, 1);
+      font-weight: 600;
+      font-size: 17px;
+    }
+
+    #our-families-text-subheading {
+      color: rgba(27, 60, 116, 1);
+      font-size: 48px;
+      font-weight: 600;
+    }
+
+    #our-families-text-para {
+      font-family: Inter;
+      font-size: 17px;
+      font-weight: 500;
+      text-align: justify;
+    }
+  }
+
+  .our-families-card {
+    /* background-color: brown; */
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    .our-families-card-left {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+    }
+
+    .our-families-card-right {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      padding-top: 6rem;
+    }
+  }
+
+
+}

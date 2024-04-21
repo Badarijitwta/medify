@@ -6,6 +6,43 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-
   box-shadow: 0px 34px 44px 0px rgba(213, 219, 228, 0.44);
+  background-color: white;
+
+  p {
+    margin-top: 0;
+    padding: 0
+  }
+
+}
+
+.card-main:hover {
+  background-color: rgba(42, 167, 255, 0.08);
+  border: 1px solid rgba(42, 167, 255, 1);
+  cursor: pointer;
+}
+
+.card-icon {
+  width: 80px;
+  height: 5rem;
+  color: rgba(42, 167, 255, 1);
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+
+
+@media (max-width: 1280px) {
+  .card-main {
+    /* CSS rules for .card-main at viewport width <= 600px */
+    width: 12.875rem;
+    height: 8.25rem;
+
+  }
+
+  .card-icon {
+    width: 50px;
+    height: 50px;
+  }
 }

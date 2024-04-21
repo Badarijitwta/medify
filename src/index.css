@@ -1,6 +1,13 @@
-/* :root {
+:root {
   /* Global variables to be defined here */
-/* --color-white: #ffffff; */
+  /* --color-white: #ffffff; */
+  --color-light-blue: rgba(42, 167, 255, 1);
+  --color-dark-blue: rgba(27, 60, 116, 1);
+  --color-light-gray: rgba(119, 130, 157, 1);
+  --font-primary: Poppins;
+  --font-Inter: Inter;
+  --font-Roboto: Roboto;
+}
 
 *,
 *::before,
@@ -53,12 +60,7 @@ h6 {
   isolation: isolate;
 }
 
-* {
-  font-family: Poppins, sans-serif;
-
-}
-
 body {
-  background: linear-gradient(81deg, #d0e1ff 9.01%, rgba(232, 241, 255, 0.47) 89.11%);
-
+  background: linear-gradient(81deg, #d0e1ff 9.01%, rgba(232, 241, 255, 0.47) 89.11%) no-repeat;
+  font-family: var(--font-primary)
 }

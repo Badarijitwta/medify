@@ -1,12 +1,11 @@
 import "./style.css";
+import React from "react";
 
-function Card({ icon, description }) {
-  console.log("Icon", icon);
-  console.log(description);
+function Card(props) {
   return (
     <div className="card-main">
-      {icon}
-      {description}
+      {React.cloneElement(props.icon, { className: "card-icon" })}
+      <p style={props.descriptionStyle}>{props.description}</p>
     </div>
   );
 }

@@ -1,0 +1,137 @@
+.top-text-main {
+  width: 100%;
+  background-color: var(--color-light-blue);
+  display: flex;
+  justify-content: center;
+  color: white;
+  z-index: 3;
+
+  #top-text-main-header {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.navbar-main {
+  width: 90%;
+  height: 6rem;
+  /* background-color: aqua; */
+  display: flex;
+  margin: 0 auto;
+  max-width: 1280px;
+  align-items: center;
+  justify-content: space-between;
+
+  #navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    list-style: none;
+
+    li {
+
+      .nav-link {
+        text-decoration: none;
+        color: black;
+        height: 100%;
+        padding: 0 0.5rem;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-link:hover {
+        cursor: pointer;
+
+      }
+    }
+  }
+
+  #logo-text-wrapper {
+    color: var(--color-light-blue);
+    font-weight: bolder;
+    font-size: larger;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+  }
+
+  #mobile {
+    display: none;
+  }
+
+
+}
+
+
+
+
+
+
+
+@media (max-width:800px) {
+
+  #mobile {
+    display: flex !important;
+    width: 3rem;
+    height: 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .menu-icon {
+      width: 30px;
+      height: 30px;
+      color: var(--color-light-blue);
+    }
+
+    #wrong-icon {
+      color: white;
+      z-index: 4;
+    }
+
+  }
+
+  .navbar-main {
+    #navbar {
+      display: none;
+    }
+
+    #navbar.active {
+      display: flex;
+      width: 250px;
+      height: 100vh;
+      position: fixed;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 5rem 0;
+      top: 0;
+      right: 0;
+      z-index: 2;
+      background-color: rgb(28, 65, 159);
+
+      li {
+        padding: 1rem;
+
+        .nav-link {
+          color: white;
+        }
+      }
+    }
+
+    #navbar.inactive {
+      display: none;
+    }
+
+
+  }
+}
+
+@media(max-width:300px) {
+  #navbar.active {
+    width: 100%;
+  }
+}

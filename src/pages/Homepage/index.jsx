@@ -1,20 +1,21 @@
-import Card from "../../components/Card";
-import HeroContentContainer from "../../components/HeroContentContainer";
-import Navbar from "./../../components/Navbar/index";
-import { TbDeviceHeartMonitor } from "react-icons/tb";
+// import BlogsAndNews from "../../components/containers/BlogsAndNews";
+// import FAQSection from "../../components/containers/FAQSection";
+// import HeroContentContainer from "../../components/containers/HeroContentContainer";
+// import MedicalSpecialistContainer from "../../components/containers/MedicalSpecialistContainer";
+// import OurFamilies from "../../components/containers/OurFamilies";
+// import PatientCaringContainer from "../../components/containers/PatientCaringContainer";
+// import SpecialisationContainer from "../../components/containers/SpecialisationContainer";
 
+import CustomNavbar from "../../components/containers/CustomNavbar";
 import "./style.css";
-import Button from "./../../components/Button/index";
+
 function HomePage() {
-  const SpecializationCardData = [
-    { icon: <TbDeviceHeartMonitor />, description: "MRI Resonance" },
-  ];
   return (
     <div>
       <header>
-        <Navbar />
+        <CustomNavbar />
       </header>
-      <main>
+      {/* <main>
         <HeroContentContainer />
         <div className="coupon-container">
           <div className="coupon-container-main">
@@ -34,27 +35,13 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <div className="specialization-container">
-          <h3 id="specialization-header">Find By Specialisation</h3>
-          <div className="specialization-container-main">
-            {SpecializationCardData.map((card, index) => {
-              <Card
-                key={index}
-                icon={card.icon}
-                description={card.description}
-              />;
-            })}
-          </div>
-          <Button
-            text={"View All"}
-            style={{
-              width: "147px",
-              height: "50px",
-              borderRadius: "8px",
-            }}
-          />
-        </div>
-      </main>
+        <SpecialisationContainer />
+        <MedicalSpecialistContainer />
+        <PatientCaringContainer />
+        <BlogsAndNews />
+        <OurFamilies />
+        <FAQSection />
+      </main> */}
     </div>
   );
 }
