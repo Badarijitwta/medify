@@ -4,6 +4,8 @@
   display: flex;
   justify-content: center;
   color: white;
+  position: relative;
+  top: 0;
   z-index: 3;
 
   #top-text-main-header {
@@ -112,6 +114,8 @@
       right: 0;
       z-index: 2;
       background-color: rgb(28, 65, 159);
+      transition: width 0.3s ease-in-out;
+
 
       li {
         padding: 1rem;
